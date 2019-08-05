@@ -1,1 +1,34 @@
-Hello World
+<html>
+  <head>
+  <title>Power BI Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  </head>
+  <body>
+    <div class="carousel">
+        <div>
+            <iframe width="1600" height="900" style="width: 100vw; height: 100vh;" src="https://app.powerbi.com/reportEmbed?reportId=df1a1f2f-fafe-49a2-a34c-9769106aecce&autoAuth=true&ctid=3197754b-b3a7-45b5-b82c-c8bc62c25b58&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVzLWVhc3QyLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0In0%3D" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        <div>
+            <iframe width="1600" height="900" style="width: 100vw; height: 100vh;" src="https://app.powerbi.com/reportEmbed?reportId=1cd6bc25-4a2e-441f-b112-e45d09dd991f&autoAuth=true&ctid=3197754b-b3a7-45b5-b82c-c8bc62c25b58" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        <div>
+            <iframe width="1600" height="900" style="width: 100vw; height: 100vh;" src="https://app.powerbi.com/reportEmbed?reportId=e6699fc4-0e60-4156-9b06-515cd95e8f14&autoAuth=true&ctid=3197754b-b3a7-45b5-b82c-c8bc62c25b58&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVzLWVhc3QyLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0In0%3D" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                infinite: true,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+  </body>
+</html>
